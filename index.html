@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <header class="header flex__center">
+        <h1 class="header__text">This is random maze generator</h1>
+      </header>
+    </div>
+    <main class="main flex__center">
+      <div class="wrapper  left">
+        <p class="description">
+          This random maze generator was coded in Vanilla JS.</p>
+          <p class="description"> I have coded it
+          along with
+          <a class="link" href="https://shiffman.net/">Daniel Shiffman</a>.
+        </p>
+        <p class="description">
+          Daniel coded it using
+          <a class="link" href="https://p5js.org/">P5.js</a> library.
+        </p>
+        <p class="description">Everytime you refresh the page, the maze will have diffrent color.</p>
+        <div class="wrapper wrapper--inner">
+          <p class="description">
+            Below you can see how the position of "walker" changes.
+          </p>
+          <p class="description walker">Walker position:</p>
+          <div>
+            <span class="span--bold">X:<span></span>
+            <span class="span--bold positionX"></span>
+          </div>
+          <div>
+            <span class="span--bold">Y:</span>
+            <span class="span--bold positionY"></span>
+          </div>
+        </div>
+        <p class="description enjoy">Enjoy!</p>
+      </div>
+      <div class="wrapper flex__center right">
+        <div class="canvas__wrapper">
+          <canvas id="canvas" height="300" width="300"></canvas>
+        </div>
+        <div class="button__wrapper flex__center">
+          <button class="button">
+            A<span class="span--bold">maze</span> me!
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
